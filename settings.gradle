@@ -1,0 +1,4 @@
+rootProject.name = 'ledger-system'
+
+include 'int-test'
+include 'perf-test'

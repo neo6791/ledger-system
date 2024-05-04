@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: org.axonframework:axon-spring:4.9.3" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.axonframework" artifactId="axon-spring" version="4.9.3" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.axonframework/axon-spring/4.9.3/c18aecbc41c9c22779d696937391d0d9af3f9a11/axon-spring-4.9.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

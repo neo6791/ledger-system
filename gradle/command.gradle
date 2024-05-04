@@ -1,0 +1,27 @@
+sourceSets {
+    command {
+        java {
+            compileClasspath += sourceSets.common.output
+            runtimeClasspath += sourceSets.common.output
+        }
+    }
+}
+
+dependencies {
+    commandImplementation 'org.springframework.boot:spring-boot-starter-web'
+
+    commandImplementation("org.axonframework:axon-spring-boot-starter:4.9.3") {
+        exclude group: "org.axonframework", module: "axon-server-connector"
+    }
+    commandImplementation "org.springframework.boot:spring-boot-starter-data-jpa"
+    commandImplementation "com.h2database:h2:2.2.224"
+
+// https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-starter-webmvc-ui
+    commandImplementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0'
+
+
+    commandCompileOnly 'org.projectlombok:lombok'
+    commandAnnotationProcessor 'org.projectlombok:lombok'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}

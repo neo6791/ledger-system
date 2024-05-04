@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: org.axonframework:axon-spring-boot-autoconfigure:4.9.3" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.axonframework" artifactId="axon-spring-boot-autoconfigure" version="4.9.3" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.axonframework/axon-spring-boot-autoconfigure/4.9.3/718b8d157db74c7a0c32b0cddf460df22dac382d/axon-spring-boot-autoconfigure-4.9.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

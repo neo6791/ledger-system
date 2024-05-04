@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: io.cucumber:messages:24.1.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="io.cucumber" artifactId="messages" version="24.1.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.cucumber/messages/24.1.0/bbf2037b6254713bb72fe384fbaf472e6e50eb9a/messages-24.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

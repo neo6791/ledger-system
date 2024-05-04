@@ -1,0 +1,6 @@
+{
+  "entryDate": "#{entryDate}",
+  "description": "Some description",
+  "amount": "#{amount}",
+  "type": "DR"
+}
