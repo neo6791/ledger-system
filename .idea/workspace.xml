@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8de5e200-094d-4210-946b-8ab276b6a57f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/common/java/neo/ledger/common/event/LedgerEntryEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/query/java/neo/ledger/query/controller/dto/LedgerAccountBalanceOnDateDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/neo/ledger/query/service/LedgerQueryServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/arch_diagram.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/app.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" afterDir="false" />
@@ -17,46 +14,182 @@
       <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_axonframework_axon_messaging_4_9_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_axonframework_axon_messaging_4_9_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/perf-test/ledger-system.perf-test.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/perf-test/ledger-system.perf-test.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_classic_1_4_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_core_1_4_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_classmate_1_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_15_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_15_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_15_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_15_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_15_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_15_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_module_jackson_module_parameter_names_2_15_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_h2database_h2_2_2_224.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jayway_jsonpath_json_path_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jayway_jsonpath_json_path_assert_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_lmax_disruptor_3_4_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_istack_istack_commons_runtime_4_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_thoughtworks_xstream_xstream_1_4_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_zaxxer_HikariCP_5_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_cucumber_ci_environment_10_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_cucumber_cucumber_core_7_17_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_cucumber_cucumber_expressions_17_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_cucumber_cucumber_gherkin_7_17_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_cucumber_cucumber_gherkin_messages_7_17_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_cucumber_cucumber_java_7_17_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_cucumber_cucumber_junit_7_17_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_cucumber_cucumber_plugin_7_17_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_cucumber_cucumber_spring_7_17_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_cucumber_datatable_7_17_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_cucumber_docstring_7_17_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_cucumber_gherkin_28_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_cucumber_html_formatter_21_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_cucumber_junit_xml_formatter_0_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_cucumber_messages_24_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_cucumber_query_12_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_cucumber_tag_expressions_6_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_cucumber_testng_xml_formatter_0_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_github_x_stream_mxparser_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_micrometer_micrometer_commons_1_12_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_micrometer_micrometer_observation_1_12_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_buffer_4_1_109_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_codec_4_1_109_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_codec_dns_4_1_109_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_codec_http2_4_1_109_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_codec_http_4_1_109_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_codec_socks_4_1_109_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_common_4_1_109_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_handler_4_1_109_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_handler_proxy_4_1_109_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_resolver_4_1_109_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_resolver_dns_4_1_109_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_resolver_dns_classes_macos_4_1_109_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_resolver_dns_native_macos_osx_x86_64_4_1_109_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_transport_4_1_109_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_transport_classes_epoll_4_1_109_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_109_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_transport_native_unix_common_4_1_109_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_projectreactor_netty_reactor_netty_core_1_1_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_projectreactor_netty_reactor_netty_http_1_1_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_projectreactor_reactor_core_3_6_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_smallrye_jandex_3_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_swagger_core_v3_swagger_annotations_jakarta_2_2_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_swagger_core_v3_swagger_core_jakarta_2_2_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_swagger_core_v3_swagger_models_jakarta_2_2_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jakarta_activation_jakarta_activation_api_2_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jakarta_annotation_jakarta_annotation_api_2_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jakarta_inject_jakarta_inject_api_2_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jakarta_persistence_jakarta_persistence_api_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jakarta_transaction_jakarta_transaction_api_2_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jakarta_validation_jakarta_validation_api_3_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jakarta_xml_bind_jakarta_xml_bind_api_4_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_13_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_14_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_agent_1_14_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_minidev_accessors_smart_2_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_minidev_json_smart_2_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_antlr_antlr4_runtime_4_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_lang3_3_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_api_2_21_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_to_slf4j_2_21_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_core_10_1_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_el_10_1_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_websocket_10_1_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_aspectj_aspectjweaver_1_9_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_assertj_assertj_core_3_24_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_awaitility_awaitility_4_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_axonframework_axon_configuration_4_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_axonframework_axon_disruptor_4_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_axonframework_axon_eventsourcing_4_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_axonframework_axon_messaging_4_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_axonframework_axon_modelling_4_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_axonframework_axon_spring_4_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_axonframework_axon_spring_boot_autoconfigure_4_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_axonframework_axon_spring_boot_starter_4_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_angus_angus_activation_2_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_glassfish_jaxb_jaxb_core_4_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_glassfish_jaxb_jaxb_runtime_4_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_glassfish_jaxb_txw2_4_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_common_hibernate_commons_annotations_6_0_6_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_orm_hibernate_core_6_4_4_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_logging_jboss_logging_3_5_3_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_5_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_params_5_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mockito_mockito_core_5_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mockito_mockito_junit_jupiter_5_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_objenesis_objenesis_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_ow2_asm_asm_9_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_projectlombok_lombok_1_18_32.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_reactivestreams_reactive_streams_1_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_skyscreamer_jsonassert_1_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_jul_to_slf4j_2_0_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_2_0_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springdoc_springdoc_openapi_starter_common_2_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springdoc_springdoc_openapi_starter_webmvc_api_2_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springdoc_springdoc_openapi_starter_webmvc_ui_2_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_3_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_autoconfigure_3_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_3_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_aop_3_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_data_jpa_3_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_jdbc_3_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_json_3_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_logging_3_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_reactor_netty_3_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_test_3_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_tomcat_3_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_web_3_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_webflux_3_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_3_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_autoconfigure_3_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_data_spring_data_commons_3_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_data_spring_data_jpa_3_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aop_6_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aspects_6_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_beans_6_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_6_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_core_6_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_expression_6_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jcl_6_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jdbc_6_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_orm_6_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_test_6_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_tx_6_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_web_6_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_webflux_6_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_webmvc_6_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_webjars_swagger_ui_5_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_xmlunit_xmlunit_core_2_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_yaml_snakeyaml_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__xmlpull_xmlpull_1_1_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/command/neo/ledger/command/LedgerAccountAggregate.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/command/neo/ledger/command/LedgerAccountAggregate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/command/neo/ledger/command/LedgerEntryEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/neo.ledger.command.LedgerApplicationTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/ledger-system-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/ledger-system-0.0.1-SNAPSHOT-plain.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/ledger-system-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/ledger-system-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/neo.ledger.command.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-neo.ledger.command.LedgerApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/neo.ledger.command.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/neo.ledger.command.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileCommandJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileCommandJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/common.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/common.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/js/all_sessions.js" beforeDir="false" afterPath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/js/all_sessions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/js/assertions.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/js/assertions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/js/ellipsis.js" beforeDir="false" afterPath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/js/ellipsis.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/js/gatling.js" beforeDir="false" afterPath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/js/gatling.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/js/global_stats.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/js/global_stats.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/js/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/js/menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/js/stats.js" beforeDir="false" afterPath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/js/stats.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/js/stats.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/js/stats.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/js/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/js/theme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/js/unpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/js/unpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/req_-ledger-account-ae1ea.html" beforeDir="false" afterPath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/req_-ledger-account-ae1ea.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/req_-ledger-account-d599f.html" beforeDir="false" afterPath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/req_-ledger-account-d599f.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/style/logo-enterprise.svg" beforeDir="false" afterPath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/style/logo-enterprise.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/style/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/style/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/results/ledgerperformancesimulation-20240506125205163/style/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/java/neo/ledger/command/LedgerAccountAggregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/java/neo/ledger/command/LedgerAccountAggregate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/java/neo/ledger/command/LedgerEntryEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/java/neo/ledger/command/service/LedgerCommandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/java/neo/ledger/command/service/LedgerCommandServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/query/java/neo/ledger/query/controller/AccountQueryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/query/java/neo/ledger/query/controller/AccountQueryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/query/java/neo/ledger/query/controller/dto/LedgerEntryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/query/java/neo/ledger/query/controller/dto/LedgerAccountBalanceDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/query/java/neo/ledger/query/service/LedgerQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/query/java/neo/ledger/query/service/LedgerQueryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/query/java/neo/ledger/query/service/LedgerQueryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/query/java/neo/ledger/query/service/LedgerQueryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/neo/ledger/command/LedgerAccountAggregateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/neo/ledger/command/LedgerAccountMockMvcTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/neo/ledger/command/LedgerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/neo/ledger/LedgerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/int-test/build/libs/int-test-0.0.1-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/int-test/build/libs/int-test-0.0.1-plain.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/int-test/build/libs/int-test-0.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/int-test/build/libs/int-test-0.0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/int-test/build/resources/main/features/LedgerCommand.feature" beforeDir="false" afterPath="$PROJECT_DIR$/int-test/build/resources/main/features/LedgerCommand.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/int-test/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/int-test/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,17 +214,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="ledger-system" type="f1a62948:ProjectNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ledger-system" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ledger-system" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="help" type="c8890929:TasksNode$1" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -105,12 +227,32 @@
         <option value="Enum" />
         <option value="AnnotationType" />
         <option value="Class" />
-        <option value="JUnit5 Test Class" />
       </list>
+    </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="final_version" />
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="final_version" />
+    <option name="OPTIONS">
+      <set>
+        <option value="INTERACTIVE" />
+      </set>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="." />
+        <option name="rewordedMessage" value="final version" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="3c158ac73cf9f69b5df4528381fe5e890f270d1a" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/neo/cqrs/cqrsdemo/AccountQueryManager.java" root0="SKIP_HIGHLIGHTING" />
@@ -129,23 +271,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Cucumber Java.Feature: LedgerCommand.executor": "Run",
-    "Cucumber Java.Scenario: first scenario.executor": "Run",
-    "Cucumber Java.Scenario: for an account various entries to ledger gets included to the balance.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
     "Gradle.Build cqrs-demo.executor": "Run",
     "Gradle.Build ledger-system.executor": "Run",
-    "Gradle.Download Sources.executor": "Run",
-    "Gradle.LedgerQueryServiceImplTest.executor": "Run",
-    "Gradle.LedgerQueryServiceImplTest.invalidAccount_throws_invalidAccount.executor": "Run",
-    "Gradle.LedgerQueryServiceImplTest.readBalanceOnPastDate_threeDebits_calculatedToBeZero.executor": "Run",
-    "Gradle.LedgerQueryServiceImplTest.test.executor": "Run",
     "Gradle.cqrs-demo [dependencies].executor": "Run",
-    "Gradle.ledger-system [clean build].executor": "Run",
-    "Gradle.ledger-system [dependencies].executor": "Run",
-    "Gradle.ledger-system:int-test [:int-test:LedgerSystemCucumberTests.main()].executor": "Run",
-    "Gradle.ledger-system:perf-test [:perf-test:CqrsDemoApplication.main()].executor": "Run",
-    "Gradle.ledger-system:perf-test [:perf-test:LedgerSystemPerformanceTestRunner.main()].executor": "Run",
     "HTTP Request.generated-requests | #1.executor": "Run",
     "HTTP Request.generated-requests | #2.executor": "Run",
     "HTTP Request.generated-requests | #3.executor": "Run",
@@ -155,211 +283,98 @@
     "HTTP Request.generated-requests | #7.executor": "Run",
     "HTTP Request.generated-requests | #8.executor": "Run",
     "HTTP Request.generated-requests | #9.executor": "Run",
-    "JUnit.LedgerSystemCucumberTests.executor": "Run",
-    "Karate.LedgerCommand:3.executor": "Run",
-    "Karate.command.executor": "Run",
-    "Karate.command:3.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.CqrsDemoApplication.executor": "Run",
-    "Spring Boot.LedgerApplication (1).executor": "Run",
-    "Spring Boot.LedgerApplication (2).executor": "Run",
     "Spring Boot.LedgerApplication.executor": "Run",
     "Spring Boot.UsersApplication.executor": "Run",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "git-widget-placeholder": "init__verion",
+    "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "temurin-17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/nalinrupasinha/git/ledger-system/gradle",
+    "last_opened_file_path": "/Users/nalinrupasinha/git/ledger-system/docs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="ReactorSettings">
-    <option name="notificationShown" value="true" />
-  </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="neo.cqrs.cqrsdemo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/gradle" />
-      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/docs" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/users" />
       <recent name="$PROJECT_DIR$/read-ledger" />
+      <recent name="$PROJECT_DIR$/src/main/java/neo/cqrs/cqrsdemo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="neo.ledger.command2" />
-      <recent name="neo.ledger.command" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="neo.ledger.query.service" />
-      <recent name="neo.ledger.command" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="neo.ledger.query.controller.dto" />
-      <recent name="neo.ledger.command" />
-      <recent name="neo.ledger.cukes.steps" />
-      <recent name="neo.cqrs.cqrsdemo.repository" />
-      <recent name="neo.cqrs.cqrsdemo.event" />
+      <recent name="neo.cqrs.cqrsdemo" />
+      <recent name="neo.cqrs.users" />
     </key>
-  </component>
-  <component name="RunAnythingCache">
-    <option name="myCommands">
-      <command value="gradle clean build" />
-    </option>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
         <option value="MicronautRunConfigurationType" />
         <option value="QuarkusRunConfigurationType" />
-      </set>
-    </option>
-    <option name="excludedTypes">
-      <set>
-        <option value="HttpClient.HttpRequestRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.LedgerQueryServiceImplTest.invalidAccount_throws_invalidAccount">
-    <configuration name="LedgerSystemPerformanceTestRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="neo.cqrs.read.ledger.LedgerSystemPerformanceTestRunner" />
+  <component name="RunManager" selected="Spring Boot.LedgerApplication">
+    <configuration name="generated-requests | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="6" requestIdentifier="#6" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #7" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="7" requestIdentifier="#7" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #8" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="8" requestIdentifier="#8" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #9" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="9" requestIdentifier="#9" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="CqrsDemoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="ledger-system.perf-test.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="neo.cqrs.read.ledger.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="neo.cqrs.read.ledger.CqrsDemoApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LedgerQueryServiceImplTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;neo.ledger.query.service.LedgerQueryServiceImplTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="LedgerQueryServiceImplTest.invalidAccount_throws_invalidAccount" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;neo.ledger.query.service.LedgerQueryServiceImplTest.invalidAccount_throws_invalidAccount&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="LedgerQueryServiceImplTest.readBalanceOnPastDate_threeDebits_calculatedToBeZero" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;neo.ledger.query.service.LedgerQueryServiceImplTest.readBalanceOnPastDate_threeDebits_calculatedToBeZero&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="LedgerQueryServiceImplTest.test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;neo.ledger.query.service.LedgerQueryServiceImplTest.test&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="CqrsDemoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="ledger-system.int-test.main" />
+    <configuration name="CqrsDemoApplication (3)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ledger-system.perf-test.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="neo.cqrs.read.ledger.CqrsDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CqrsDemoApplication (4)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="cqrs-demo.perf-test.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="neo.cqrs.read.ledger.CqrsDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CqrsDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ledger-system.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="neo.cqrs.cqrsdemo.CqrsDemoApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="neo.cqrs.cqrsdemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -371,30 +386,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LedgerSystemPerformanceTestRunner" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="ledger-system.perf-test.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="neo.cqrs.read.ledger.LedgerSystemPerformanceTestRunner" />
+    <configuration name="UsersApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="neo.cqrs.cqrs-demo.users.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="neo.cqrs.users.UsersApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.LedgerSystemPerformanceTestRunner" />
-      <item itemvalue="Gradle.LedgerQueryServiceImplTest" />
-      <item itemvalue="Gradle.LedgerQueryServiceImplTest.invalidAccount_throws_invalidAccount" />
-      <item itemvalue="Gradle.LedgerQueryServiceImplTest.readBalanceOnPastDate_threeDebits_calculatedToBeZero" />
-      <item itemvalue="Gradle.LedgerQueryServiceImplTest.test" />
-      <item itemvalue="Spring Boot.LedgerSystemPerformanceTestRunner" />
-      <item itemvalue="Spring Boot.CqrsDemoApplication (1)" />
+      <item itemvalue="HTTP Request.generated-requests | #6" />
+      <item itemvalue="HTTP Request.generated-requests | #7" />
+      <item itemvalue="HTTP Request.generated-requests | #8" />
+      <item itemvalue="HTTP Request.generated-requests | #9" />
       <item itemvalue="Spring Boot.LedgerApplication" />
+      <item itemvalue="Spring Boot.CqrsDemoApplication (1)" />
+      <item itemvalue="Spring Boot.CqrsDemoApplication (3)" />
+      <item itemvalue="Spring Boot.CqrsDemoApplication (4)" />
+      <item itemvalue="Spring Boot.UsersApplication" />
+      <item itemvalue="Spring Boot.CqrsDemoApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.LedgerQueryServiceImplTest.invalidAccount_throws_invalidAccount" />
-        <item itemvalue="Gradle.LedgerQueryServiceImplTest" />
-        <item itemvalue="Gradle.LedgerQueryServiceImplTest.readBalanceOnPastDate_threeDebits_calculatedToBeZero" />
-        <item itemvalue="Gradle.LedgerQueryServiceImplTest.test" />
-        <item itemvalue="Application.LedgerSystemPerformanceTestRunner" />
+        <item itemvalue="Spring Boot.CqrsDemoApplication" />
+        <item itemvalue="HTTP Request.generated-requests | #9" />
+        <item itemvalue="HTTP Request.generated-requests | #8" />
+        <item itemvalue="HTTP Request.generated-requests | #7" />
+        <item itemvalue="HTTP Request.generated-requests | #6" />
       </list>
     </recent_temporary>
   </component>
@@ -415,14 +432,24 @@
       <option name="presentableId" value="Default" />
       <updated>1714774500046</updated>
       <workItem from="1714774501601" duration="10818000" />
-      <workItem from="1714845281900" duration="8293000" />
-      <workItem from="1714917278481" duration="16968000" />
-      <workItem from="1714969790095" duration="26723000" />
+      <workItem from="1714845281900" duration="7207000" />
+      <workItem from="1715031601767" duration="1756000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -439,31 +466,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/neo/cqrs/cqrsdemo/repository/LibraryProjector.java</url>
           <line>24</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/command/java/neo/ledger/command/service/LedgerCommandServiceImpl.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/command/java/neo/ledger/command/LedgerAccountAggregate.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/command/java/neo/ledger/command/LedgerAccountAggregate.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/int-test/src/main/java/neo/ledger/integration/test/steps/CommandSteps.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/neo/ledger/query/service/LedgerQueryServiceImplTest.java</url>
-          <line>74</line>
-          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

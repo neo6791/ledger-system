@@ -1,7 +1,7 @@
 Feature: Simple ledger balance verifier
 
   Scenario Outline: for an account various entries to ledger gets included to the balance
-    Given a call ledger entry endpoint with:
+    Given a call to ledger entry endpoint with:
       | account     | <account>     |
       | amount      | <amount>      |
       | description | <description> |
