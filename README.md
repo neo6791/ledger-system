@@ -23,9 +23,11 @@ Execute `./scripts/app.sh` in terminal from the root of the project.
 ### Integration tests
 
 Make sure application is running as described above.
+
 Execute `./scripts/int.sh` in terminal from the root of the project.
 
 ### Performance tests
 
 Make sure application is running as described above.
+
 Execute `./scripts/perf.sh` in terminal from the root of the project.
