@@ -1,10 +1,29 @@
 # Ledger System
 
-## Tech Stack
+## Acceptance Criteria
 
-* Java 17
-* Spring Boot
+* [x] Integration and Unit Test Cases that are readable and behaviour driven (Must) 
+
+* [-] (Not completely microservices architecture, due to time constraints) System able to communicate with the client both synchronously and asynchronously
+
+* [x] Swagger Spec for APIs [Local link](http://localhost:8080/swagger-ui/index.html)
+
+* [x] Read me if required to pass on any additional information to the reviewer
+
+* [x] Write Gatling based Load Test for one of the APIs (Must)
+
+* [x] Write JUnit based integration test for one of the APIs (Must)-assume that rest of the third party services are not ready hence use mocks/stubs wherever appropriate
+
+## Stack
+
+* Java 17 and above
+
+* Spring Boot, Junit, Mockito, Gatling (Performance Testing)
+
+* Cucumber (Integration testing)
+
 * Axon Server
+
 * H2 in memory DB
 
 ## Architecture Diagram
