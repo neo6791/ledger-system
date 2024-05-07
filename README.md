@@ -37,6 +37,17 @@ and [query](src/query) sourceSets needs to be developed to be individually deplo
 
 ![Domain model](docs/domain-model.jpeg)
 
+## API Specification
+
+### Post entry API
+![entry](docs/entry-api.jpeg)
+
+### Read account balance API
+![get-account-balance](docs/get-account-balance.jpeg)
+
+### Read account balance at timestamp API
+![get-account-balance-for-date](docs/get-account-balance-for-date.jpeg)
+
 ## Local execution
 
 ### Application
