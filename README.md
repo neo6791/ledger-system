@@ -26,8 +26,12 @@ Make sure application is running as described above.
 
 Execute `./scripts/int.sh` in terminal from the root of the project.
 
+![Integration test results](docs/int-report.jpeg)
+
 ### Performance tests
 
 Make sure application is running as described above.
 
 Execute `./scripts/perf.sh` in terminal from the root of the project.
+
+![Sample performance report](docs/perf-report.jpeg)

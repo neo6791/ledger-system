@@ -3,6 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/users/cqrs-demo.users.main.iml" filepath="$PROJECT_DIR$/.idea/modules/users/cqrs-demo.users.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ledger-system.command.iml" filepath="$PROJECT_DIR$/.idea/modules/ledger-system.command.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/int-test/ledger-system.int-test.main.iml" filepath="$PROJECT_DIR$/.idea/modules/int-test/ledger-system.int-test.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ledger-system.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ledger-system.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/perf-test/ledger-system.perf-test.main.iml" filepath="$PROJECT_DIR$/.idea/modules/perf-test/ledger-system.perf-test.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ledger-system.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ledger-system.test.iml" />
     </modules>
   </component>
 </project>
