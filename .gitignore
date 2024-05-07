@@ -1,7 +1,7 @@
 .gradle
+.idea/
 /build
 /int-test/build
 /perf-test/build
 /results
 
-.idea

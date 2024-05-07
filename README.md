@@ -14,6 +14,10 @@
 This initial version is a much simplified version of the intended architecture, [command](src/command)
 and [query](src/query) sourceSets needs to be developed to be individually deployable/scalable artifacts.
 
+## Initial Domain model (WIP)
+
+![Domain model](docs/domain-model.jpeg)
+
 ## Local execution
 
 ### Application
