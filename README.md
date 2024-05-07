@@ -4,7 +4,7 @@
 
 * [x] Integration and Unit Test Cases that are readable and behaviour driven (Must) 
 
-* [-] (Not completely microservices architecture, due to time constraints) System able to communicate with the client both synchronously and asynchronously
+* [ ] (Not completely microservices architecture, due to time constraints) System able to communicate with the client both synchronously and asynchronously
 
 * [x] Swagger Spec for APIs [Local link](http://localhost:8080/swagger-ui/index.html)
 
